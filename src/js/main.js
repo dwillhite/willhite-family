@@ -36,4 +36,7 @@ var map;
         map: map,
         title: "Painted Buffalo Inn"
     });
+
+
+
 }
