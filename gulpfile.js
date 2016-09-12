@@ -51,6 +51,7 @@ gulp.task('html', function() {
   .pipe(reload({stream:true}));
 });
 
+
 // ////////////////////////////////////////
 // build task
 // ///////////////////////////////////////
@@ -93,14 +94,8 @@ gulp.task('browser-sync', function() {
   });
 });
 
-// task to run build server for testing final src
-gulp.task('build:serve', function() {
-  browserSync({
-    server:{
-      baseDir: "./build/"
-    }
-  });
-});
+
+
 
 // ////////////////////////////////////////
 // Watch Task
