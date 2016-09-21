@@ -34,11 +34,12 @@ gulp.task('compass', function() {
   .pipe(compass({
     config_file: 'config.rb',
     css: 'src/css',
-    sass: 'src/scss'
+    sass: 'src/scss',
+    image: 'src/img'
 
   }))
   .pipe(autoprefixer('last 2 versions'))
-  .pipe(gulp.dest('src/css/'))
+  .pipe(gulp.dest('src/../'))
   .pipe(reload({stream:true}));
 });
 
