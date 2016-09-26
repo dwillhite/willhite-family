@@ -1,6 +1,18 @@
 //home sass
+//imports
+@import 'variables';
 
-
+.left-content {
+    color: $white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.right-content {
+    color: $white;
+}
+.event-img-wrap {
+    margin-bottom: 20px;
+}
 //map styles
 .google-maps {
      position: relative;
@@ -22,5 +34,9 @@
     max-height: 580px;
     width: 100%;
 }
-//imports
-@import 'variables';
+
+@media only screen and (min-width: 992px) {
+    .right-content {
+    //    border-left: 2px solid $red-orange;
+    }
+}

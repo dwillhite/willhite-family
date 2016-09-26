@@ -1,5 +1,6 @@
+/////////////main js////////////////////
 
-
+////////////////slideshow////////////////
 var slideIndex = 0;
 carousel();
 
@@ -16,11 +17,14 @@ function carousel() {
 }
 
 
+////////mobile navigation//////////////
+$('#hamburger').click(function(){
+    var mobNav = $('.main-nav');
 
+    if ($(mobNav).css('display') === 'none') {
+        $(mobNav).fadeIn();
+    }else {
+        $(mobNav).fadeOut();
+    }
 
-///slideshow hook
-/*
-$(function() {
-  $(".rslides").responsiveSlides();
 });
-*/
