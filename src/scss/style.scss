@@ -179,10 +179,9 @@ h4 {
     }
     img {
         overflow: hidden;
-        transition: all .75s linear;
+        transition: all .5s linear;
         transform: scale(1.0,1.0) translate3d(0, 0, 0);
         &:hover {
-            transition: all 1.5s linear;
             transform: scale(1.1,1.1) translate3d(0, 0, 0);
 
         }
